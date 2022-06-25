@@ -12,7 +12,6 @@
 
 let firstName = prompt("What is your name?");
 let time = prompt("What hour is it (0-24)?");
-let background = prompt("Change background color to:");
 let message = "";
 
 if(time <= 11){
@@ -30,5 +29,4 @@ if(time <= 11){
 }
 if (confirm("Confirm Answers?") == true) {
     document.write("Hello " + firstName + "! " + message);
-    document.body.style.backgroundColor("background");
 }
