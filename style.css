@@ -1,0 +1,103 @@
+
+
+body { 
+    background-color: lavender;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    /* text-align: center; */
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    background-color: white;
+    height: 150px;
+}
+
+h1 {
+    float: left;
+    /* text-align: center; */
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+    color: lightpink;
+    text-shadow: 5px 5px 5px purple;
+    font-size: 50px;
+}
+
+nav li {
+    display: inline-block;
+    margin-top: 75px;
+    margin-right: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+nav li a:hover {
+    color: lavender;
+    text-decoration: underline;
+    font-size: 22px;
+}
+
+main {
+    width: 960px;
+    margin: 30px auto;
+    /* min-height: 700px;  << optional */
+}
+
+main li img {
+    height: 260px;
+    width: 320px;
+    border: 2px lavender;
+    border-radius: 15px;
+}
+
+main li {
+    float: left;
+    /* margin-right: 30px; */
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+main li:last-child {
+    margin-right: 0px;
+}
+
+main p {
+    text-align: center;
+    font-size: 20px;
+}
+
+#hero {
+    width: 960px;
+    height: 640px;
+    border: 2px lavender;
+    border-radius: 15px;
+}
+
+#hero:hover { 
+    border: 2px solid lavender;
+    border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+    background-color: lavender;
+    height: 100px;
+}
+
