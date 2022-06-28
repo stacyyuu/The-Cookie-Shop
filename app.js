@@ -10,26 +10,64 @@
 //     console.log("Your name is Stacy!")
 // }
 
-let firstName = prompt("What is your name?");
-let time = prompt("What hour is it (0-24)?");
-let color = prompt("What's your favorite color?")
-let message = "";
-
-if(time <= 11){
-    message = "Good Morning!";
-    //console.log("Good Morning!");
-} else if(time <= 18){
-    message = "Good Afternoon!";
-    //console.log("Good Afternoon!");
-} else if(time <= 24){
-    message = "Good Night!";
-    //console.log("Good Night!");
-} else{
-    message = "Good Day!";
-    //console.log("Have a great day!");
-}
-if (confirm("Confirm Answers?") == true) {
-    document.write("Hello " + firstName + "! " + message);
+// dynamic
+function getFirstName (){
+    let firstName = prompt("What is your name?");
+    return firstName;
 }
 
-document.body.style.backgroundColor = color;
+function timeOfDay(){
+    let time = prompt("What hour is it (0-24)?");
+    // let color = prompt("What's your favorite color?")
+    let message = "";
+    
+    if(time <= 11){
+        message = "Good Morning!";
+        //console.log("Good Morning!");
+    } else if(time <= 18){
+        message = "Good Afternoon!";
+        //console.log("Good Afternoon!");
+    } else if(time <= 24){
+        message = "Good Night!";
+        //console.log("Good Night!");
+    } else{
+        message = "Good Day!";
+        //console.log("Have a great day!");
+    }
+    return message;
+}
+
+function getCourseLevel(){
+    let level = prompt("What level course are we in?");
+    if(level > 2){
+        prompt("Incorrect. Try again?");
+    } else {
+        confirm("That is correct!");
+    }
+}
+
+function generateGreeting(){
+    let firstName = getFirstName();
+    let message = timeOfDay();
+    return document.write("Hello " + firstName + ", " + message);
+}
+
+// call the function getGreeting with ARGUMENT of first name
+// getGreeting(firstName);
+
+// function getGreeting(name) {
+//     console.log('Hello, ' + name);
+// }
+
+// let sum = getSum(5, 25); 
+// function getSum(numA, numB) { 
+//     return numA + numB
+// } 
+
+
+// if (confirm("Confirm Answers?") == true) {
+//     document.write("Hello " + firstName + "! " + message);
+// }
+
+// document.body.style.backgroundColor = color;
+
