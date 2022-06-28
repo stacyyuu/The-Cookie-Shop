@@ -18,7 +18,6 @@ function getFirstName (){
 
 function timeOfDay(){
     let time = prompt("What hour is it (0-24)?");
-    // let color = prompt("What's your favorite color?")
     let message = "";
     
     if(time <= 11){
@@ -52,6 +51,10 @@ function generateGreeting(){
     return document.write("Hello " + firstName + ", " + message);
 }
 
+function backgroundColor(){
+    let color = prompt("What's your favorite color?");
+    return document.body.style.backgroundColor = color;
+}
 // call the function getGreeting with ARGUMENT of first name
 // getGreeting(firstName);
 
@@ -69,5 +72,5 @@ function generateGreeting(){
 //     document.write("Hello " + firstName + "! " + message);
 // }
 
-// document.body.style.backgroundColor = color;
+
 
