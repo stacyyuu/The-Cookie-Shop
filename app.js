@@ -38,7 +38,7 @@ function timeOfDay(){
 
 function getCourseLevel(){
     let level = prompt("What level course are we in?");
-    if(level > 2){
+    if(level != 2){
         prompt("Incorrect. Try again?");
     } else {
         confirm("That is correct!");
