@@ -95,6 +95,11 @@ main p {
     border-radius: 20px;
 }
 
+.star{
+    height: 151px;
+    /* width: 200x; */
+}
+
 footer {
     text-align: center;
     background-color: lavender;
